@@ -38,7 +38,7 @@ class SinhVien
       end
   end
   
-  sv = SinhVien.new("Thiện", "19T2")
+  sv = SinhVien.new("Việt Thịnh", "19T2")
   
   sv.nhapDiem(7, "TOAN")
   sv.nhapDiem(8, "LY")
