@@ -95,16 +95,17 @@ class QLCB
             @choose_262 = gets
             case @choose_262
             when 1 
-                  @cong_nhan = CongNhan.new("Bui", 22, "nam", "Quang Ngai", 3) 
-                  @list_can_bo_262.push(@cong_nhan)                                        
+                  @cong_nhan_262 = CongNhan.new("Bui", 22, "nam", "Quang Ngai", 3) 
+                  @list_can_bo_262.push(@cong_nhan_262)                                        
             when 2
                   @ky_su_262 = KySu.new("Viet", 22, "nam", "Quang Ngai", "Cong nghe thong tin") 
                   @list_can_bo_262.push(@ky_su_262)                                        
             when 3 
-                  @nhan_vien = NhanVien.new("Thinh", 22, "nam", "Quang Ngai", "Coder") 
-                  @list_can_bo_262.push(@cong_nhan)                                        
+                  @nhan_vien_262 = NhanVien.new("Thinh", 22, "nam", "Quang Ngai", "Coder") 
+                  @list_can_bo_262.push(@nhan_vien_262)                                        
             else
-                  "You gave me #{@choose_262} -- I have no idea what to do with that."
+                  puts "Chọn loại cán bộ (1 - Cong Nhan, 2 - Ky su, 3 - Nhan Vien): "
+                  puts " #{@choose_262} -- khong dung."
             end 
       end
 
