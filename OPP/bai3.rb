@@ -1,13 +1,13 @@
 class Candidate
       attr_accessor :id, :name, :address, :priority
       def initialize()
-          print "Enter ID: "
+          print "Nhap ID: "
           @id = gets
-          print "Enter name:"
+          print "Nhap name:"
           @name = gets
-          print "Enter address: "
+          print "Nhap address: "
           @address = gets
-          print "Enter priority: "
+          print "Nhap priority: "
           @priority = gets.to_i
       end
   
@@ -83,18 +83,18 @@ class Candidate
   managerCandidate  = ManagerCandidate.new
   while true
       puts "Application Manager Candidate"
-      puts "Enter 1: To insert candidate"
-      puts "Enter 2: To show information of candidate: "
-      puts "Enter 3: To search candidate by id"
-      puts "Enter 4: To exit:"
-      print "Enter: "
+      puts "Nhap 1: To insert candidate"
+      puts "Nhap 2: To show information of candidate: "
+      puts "Nhap 3: To search candidate by id"
+      puts "Nhap 4: To exit:"
+      print "Nhap: "
       line218  = gets.to_i
       case line218
           when 1
-              puts "Enter 1: to insert Candidate A"
-              puts "Enter 2: to insert Candidate B"
-              puts "Enter 3: to insert Candidate C"
-              print "Enter: "
+              puts "Nhap 1: to insert Candidate A"
+              puts "Nhap 2: to insert Candidate B"
+              puts "Nhap 3: to insert Candidate C"
+              print "Nhap: "
               type = gets.to_i
               case type
                   when 1
@@ -115,7 +115,7 @@ class Candidate
           when 2
               managerCandidate.showInfor
           when 3
-              print "Enter id to find: "
+              print "Nhap id to find: "
               id = gets
               candidate = managerCandidate.searchById(id)
               if candidate.nil?

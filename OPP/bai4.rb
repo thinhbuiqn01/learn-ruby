@@ -1,13 +1,13 @@
 class Person
       attr_accessor :name, :age, :job, :passport
       def initialize()
-          print "Enter name: "
+          print "Nhap name: "
           @name = gets.chomp
-          print "Enter age: "
+          print "Nhap age: "
           @age = gets.to_i
-          print "Enter job: "
+          print "Nhap job: "
           @job = gets.chomp
-          print "Enter passport: "
+          print "Nhap passport: "
           @passport = gets.chomp
       end
   
@@ -20,15 +20,15 @@ class Person
       attr_accessor :persons, :address
   
       def initialize()
-          print "Enter number person of family: "
+          print "Nhap number person of family: "
           n = gets.to_i
           @persons = []
           for i in 1..n
-              puts "\nEnter person #{i}:"
+              puts "\nNhap person #{i}:"
               person = Person.new
               @persons << person
           end
-          print "Enter address: "
+          print "Nhap address: "
           @address = gets.chomp
       end
       
@@ -46,11 +46,11 @@ class Person
   class Town
       attr_accessor :families
       def initialize()
-          print "Enter number family of town: "
+          print "Nhap number family of town: "
           n = gets.to_i
           @families = []
           for i in 1..n
-              puts "\nEnter family #{i}:"
+              puts "\nNhap family #{i}:"
               family = Family.new
               @families << family
           end

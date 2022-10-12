@@ -43,14 +43,14 @@ class Room
   class Person
       attr_accessor :name, :age, :passport, :room, :numberRent
       def initialize(room)
-          print "Enter name: "
+          print "Nhap name: "
           @name = gets
-          print "Enter age: "
+          print "Nhap age: "
           @age = gets.to_i
-          print "Enter passport: "
+          print "Nhap passport: "
           @passport = gets
           @room = room
-          print "Enter numberRent: "
+          print "Nhap numberRent: "
           @numberRent = gets.to_i
       end
       
@@ -94,12 +94,12 @@ class Room
   hotel = Hotel.new
   while true
       puts "Application Manager Candidate"
-      puts "Enter 1: To insert person for rent"
-      puts "Enter 2: To remove person by passport"
-      puts "Enter 3: To calculator price by passport"
-      puts "Enter 4: To show infor"
-      puts "Enter 5: To exit:"
-      print "Enter: "
+      puts "Nhap 1: To insert person for rent"
+      puts "Nhap 2: To remove person by passport"
+      puts "Nhap 3: To calculator price by passport"
+      puts "Nhap 4: To show infor"
+      puts "Nhap 5: To exit:"
+      print "Nhap: "
       line218  = gets.to_i
       case line218
           when 1
@@ -107,7 +107,7 @@ class Room
               puts "Choise b to rent room type B"
               puts "Choise c to rent room type C"
               while true
-                  print "Enter: "
+                  print "Nhap: "
                   choise = gets.chomp
                   case choise
                       when "a"
@@ -127,12 +127,12 @@ class Room
               hotel.add(person)
               person.toString
           when 2
-              print "Enter passport to delete: "
+              print "Nhap passport to delete: "
               passport = gets
               puts hotel.delete(passport)
               hotel.show
           when 3
-              print "Enter passport to calculator price: "
+              print "Nhap passport to calculator price: "
               passport = gets
               puts "Price: #{hotel.calculator(passport)}"
           when 4
